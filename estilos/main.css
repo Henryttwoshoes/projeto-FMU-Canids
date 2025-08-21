@@ -9,6 +9,14 @@
 header {
     background-color: gray;
     padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
 }
 
 .principal {
@@ -27,6 +35,7 @@ header {
         margin-right: 20vw;
     }
 }
+
 
 .achados {
     & .head1 {
