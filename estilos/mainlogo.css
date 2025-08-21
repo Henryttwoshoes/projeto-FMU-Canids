@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: gray;
+    padding: 20px;
+     display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+}
+
+.principal {
+    display: grid;
+    grid-template-columns: 53% 47%;
+    margin: 0 10vw;
+
+    & .mapa {
+        width: 800px;
+        height: 500px;
+        background-color: lightgreen;
+    }
+
+    & .dicas {
+        padding-top: 40vh;
+        margin-right: 20vw;
+    }
+}
+
+.achados {
+    & .head1 {
+        background-color: rgb(119, 117, 255);
+        padding: 10px;
+    }
+    & .lista {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+        & p {
+            margin: 10px;
+            background-color: lightgray;
+        }
+    }
+}
+
+.perdidos {
+    & .head2 {
+        background-color: rgb(255, 60, 60);
+        padding: 10px;
+    }
+    & .lista {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+        & p {
+            margin: 10px;
+            background-color: lightgray;
+        }
+    }
+}
