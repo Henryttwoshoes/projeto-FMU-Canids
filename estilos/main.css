@@ -66,3 +66,17 @@ header {
         }
     }
 }
+
+.forms{
+    margin: auto;
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    height: 50vh;
+}

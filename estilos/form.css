@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.forms{
+    margin: auto;
+    padding: 20px;
+    display: block;
+    box-sizing: border-box;
+}
+.label{
+    display: block;
+}

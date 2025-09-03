@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.quemsomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.blocks {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 0.2fr));
+    padding: 30px;
+}
+
+.bloco {
+    background-color: gray;
+    outline: 1px solid black;
+    height: 50px;
+    width: 50px;
+}

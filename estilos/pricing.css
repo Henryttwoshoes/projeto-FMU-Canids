@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.head {
+    padding: 20px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 0.2fr));
+    padding: 10px;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    
+    
+    & .produto {
+        background-color: gray;
+        height: 15vw;
+        width: 15vw;
+    }
+}
+
+.servicos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 0.7fr));
+    max-width: 1000px;      /* Limita a largura máxima */
+    margin: 0 auto;     /* Centraliza e afasta do topo/borda */
+    padding: 40px 30px;    /* Espaçamento interno maior nas laterais */
+    justify-content: center;
+    gap: 76px;
+    align-items: center;
+
+    & .servico{
+        background-color: lightgray;
+        width: 25vw;
+        height: 32vh;
+    }
+}
