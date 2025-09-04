@@ -18,7 +18,25 @@ header {
     height: auto;
     margin-right: 20px;
 }
+.menu-direita {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
 
+.menu-direita ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-direita a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
 .principal {
     display: grid;
     grid-template-columns: 53% 47%;
