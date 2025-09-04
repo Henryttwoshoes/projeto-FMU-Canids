@@ -41,23 +41,18 @@ header {
     display: grid;
     grid-template-columns: 53% 47%;
     margin: 0 10vw;
-}
 
-    .principal .mapa {
+& .mapa {
         width: 800px;
         height: 500px;
         background-color: lightgreen;
     }
 
-    .principal .dicas {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding-top: 1vh;
-        margin-left: 10vw;
-        text-align:right;
+    & .dicas {
+        padding-top: 40vh;
+        margin-right: 20vw;
     }
-
+}
 
 
 .achados {
