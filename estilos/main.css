@@ -108,5 +108,5 @@ body {
 
 /* Cursor ao passar sobre links */
 a, button, [role="button"] {
-    cursor: url('../imagens/Pata2.png'), pointer;
+    cursor: url('../imagens/Pata2.png')16 16, pointer;
 }
