@@ -104,9 +104,5 @@ header {
 /* Cursor padrão do site */
 body {
     cursor: url('../imagens/Pata1.png')18 18, auto;
-}
-
-/* Cursor ao passar sobre links */
-a, button, [role="button"] {
     cursor: url('../imagens/Pata2.png')18 18, pointer;
 }
