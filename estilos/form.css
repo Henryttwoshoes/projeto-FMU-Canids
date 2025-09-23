@@ -2,10 +2,19 @@
 
 .forms{
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     display: block;
     box-sizing: border-box;
 }
 .label{
+    display: block;
+}
+/* Por padrão, todas as seções do formulário estão escondidas */
+.form-section {
+    display: none;
+}
+
+/* A seção com a classe 'active' é exibida */
+.form-section.active {
     display: block;
 }

@@ -7,7 +7,7 @@
 }
 
 header {
-    background-color: gray;
+    background-color: rgb(224, 117, 117);
     padding: 20px;
      display: flex;
     align-items: center;

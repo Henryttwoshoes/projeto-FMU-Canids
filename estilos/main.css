@@ -7,7 +7,7 @@
 }
 
 header {
-    background-color: gray;
+    background-color: rgb(224, 117, 117);
     padding: 20px;
     display: flex;
     align-items: center;
@@ -103,10 +103,9 @@ header {
 
 /* Cursor padrão do site */
 body {
-    cursor: url('../imagens/Pata1.png')16 16, auto;
+    cursor: url('../imagens/Pata1.png') 18 18, auto;
 }
 
-/* Cursor ao passar sobre links */
 
 /* Cursor melhorado */
 a, button, [role="button"], input, select, textarea, label {
@@ -137,4 +136,3 @@ a, button, [role="button"], input, select, textarea, label {
     margin-left: auto;
     margin-right: auto;
 }
-
