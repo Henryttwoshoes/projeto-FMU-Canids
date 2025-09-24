@@ -67,7 +67,7 @@
     & .sups{
 
         padding: 0;
-    width: 120px;      /* aumente se quiser quadrados maiores */
+    width: 100px;      /* aumente se quiser quadrados maiores */
     height: 120px;
     background-color: lightblue;
     display: flex;

@@ -109,7 +109,7 @@ body {
 
 /* Cursor melhorado */
 a, button, [role="button"], input, select, textarea, label {
-    cursor: url('../imagens/Pata2.png') 16 16, pointer;
+    cursor: url('../imagens/Pata2.png') 18 18, pointer;
 }
 
 
@@ -131,8 +131,26 @@ a, button, [role="button"], input, select, textarea, label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-group label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.forms textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }

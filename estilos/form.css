@@ -18,3 +18,7 @@
 .form-section.active {
     display: block;
 }
+.form-group {
+    text-align: center;
+    margin: 15px 0;
+}
