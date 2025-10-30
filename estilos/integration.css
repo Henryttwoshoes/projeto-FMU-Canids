@@ -38,10 +38,10 @@
     }
 
     & .dp {
-        display: grid;
-        grid-template-columns: 0.5fr 0.5fr 1fr;
-        justify-items: center;
-        column-gap: 5px;
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
         margin-top: 20px;
     }
     & .item{
@@ -51,6 +51,69 @@
             background-color: lightblue;
             border-radius: 50%;
         }
+}
+
+:root {
+    --avatar-size: 140px; /* aumenta o tamanho do círculo */
+}
+
+/* container dos depoimentos */
+.depoimentos .dp {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+/* cada bloco (imagem + texto) */
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 220px; /* ajuste conforme desejar */
+}
+
+/* círculo do avatar: mantém tamanho fixo */
+.depoimento .item {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NÃO cortar: imagem inteira cabe dentro do círculo */
+.depoimento .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;      /* usa 'contain' em vez de 'cover' para não cortar */
+    object-position: 50% 50%; /* ajuste se precisar centralizar outro ponto */
+    display: block;
+    background: #fff;         /* cor de fundo nas áreas vazias */
+}
+
+/* texto abaixo da imagem */
+.depoimento .texto {
+    color: #770e0e;            /* cor visível sobre fundo escuro */
+    text-align: center;
+    margin-top: 6px;
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+
+/* remove margens padrão e organiza strong */
+.depoimento .texto p { margin: 0; }
+.depoimento .texto strong { display: block; margin-bottom: 6px; font-weight: 700; }
+
+/* ajuste responsivo (opcional) */
+@media (max-width:700px){
+    :root{ --avatar-size: 110px; }
+    .depoimento{ width:48%; }
 }
 
 .suporte {
