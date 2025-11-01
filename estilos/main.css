@@ -7,7 +7,7 @@
 }
 
 header {
-    background-color: rgb(224, 117, 117);
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     display: flex;
     align-items: center;
@@ -46,16 +46,18 @@ header {
         width: 800px;
         height: 500px;
         background-color: lightgreen;
+        border-radius: 10%;
     }
 
     & .dicas {
-        padding-top: 40vh;
-        margin-right: 20vw;
+        text-align: left;
+        padding-top: 4vh;
+        margin-left: 100px;
     }
 }
 
 .achados .head1 {
-    background-color: rgb(119, 117, 255);
+    background-color: rgb(255, 255, 255);
     padding: 10px;
 }
 
@@ -63,7 +65,7 @@ header {
 .perdidos .lista {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 24px;
+    gap: 12px;
     justify-items: center;
     align-items: start;
     margin: 24px 0;
@@ -76,24 +78,28 @@ header {
 }
 
 .pet-card {
-    background: #222;
+    background: #719cff;
     border-radius: 12px;
     padding: 12px 8px;
-    width: 150px;
+    width: 200px;
     text-align: center;
-    color: #fff;
-    box-shadow: 0 2px 8px #0003;
+    color: #fdfdfd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.34);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .pet-card img {
-    width: 120px;
+    width: 170px;
     height: 90px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 8px;
+}
+
+.pet4 img {
+    object-position: 0 20%;
 }
 
 
@@ -171,7 +177,10 @@ a, button, [role="button"], input, select, textarea, label, .produto, .servico, 
 /* Para o título "BCC Canids!" */
 .bcc-logo {
     font-family: 'Montserrat', Arial, sans-serif;
-    font-weight: 700;
+    font-weight: 900;
+    color: #007bff;
+    text-shadow: 1px 1px 2px rgba(0, 123, 255, 0.3);
+    font-stretch: expanded;
 }
 
 /* Para o corpo do texto */
