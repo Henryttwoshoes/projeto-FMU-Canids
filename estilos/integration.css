@@ -38,10 +38,10 @@
     }
 
     & .dp {
-        display: flex;
-        gap: 24px;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 1fr;
+        justify-items: center;
+        column-gap: 5px;
         margin-top: 20px;
     }
     & .item{
