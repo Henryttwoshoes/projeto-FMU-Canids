@@ -14,7 +14,7 @@
 .produto {
     width: 200px;               /* largura do card */
     height: 240px;              /* altura fixa do card */
-    background: #333;           /* quadrado cinza/escuro */
+    background: #92d3f8;           /* quadrado cinza/escuro */
     border-radius: 10px;
     padding: 12px;
     box-sizing: border-box;
