@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 /* Seção de redes sociais */
 .redes{
     margin: auto;
@@ -75,7 +75,7 @@
 
     & .dp {
         display: grid;
-        grid-template-columns: 0.5fr 0.5fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
         column-gap: 5px;
         margin-top: 20px;
@@ -97,7 +97,7 @@
 
 /* Container que organiza os depoimentos */
 .depoimentos .dp {
-    display: flex;
+    /*display: flex;*/
     gap: 24px;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -171,6 +171,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 8px;
     justify-items: center;
+    align-items: center;
     
     & .sups{
         padding: 0;
@@ -184,4 +185,8 @@
         text-align: center;
         border-radius: 50%;
     }
+}
+
+footer {
+    margin-top: 50px;
 }

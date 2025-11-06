@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 /* Reseta espaçamentos padrão do navegador */
 * {
     margin: 0;
@@ -40,7 +43,7 @@ header {
 .menu-direita a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
+    font-weight: 400;
     padding: 8px 16px;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
@@ -246,12 +249,13 @@ a, button, [role="button"], input, select, textarea, label, .produto, .servico, 
 
 body {
     font-family: 'Oswald', Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 370;
+    font-size: 1.2rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Kanit', Arial, sans-serif;
-    font-style: italic;
+    font-style: normal;
     font-weight: 400;
 }
 
