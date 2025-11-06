@@ -1,26 +1,28 @@
 @charset "UTF-8";
 
+/* Remove margens padrão */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Cabeçalho sem fundo */
 header {
     background-color: rgba(255, 255, 255, 0);
     padding: 20px;
-     display: flex;
+    display: flex;
     align-items: center;
 }
 
+/* Logo pequena */
 .logo {
     width: 50px;
     height: auto;
     margin-right: 20px;
 }
 
-
-
+/* Seção principal */
 .principal {
     display: grid;
     grid-template-columns: 53% 47%;
@@ -38,10 +40,12 @@ header {
     }
 }
 
+/* Seção de achados */
 .achados {
     & .lista {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+        
         & p {
             margin: 10px;
             background-color: lightgray;
@@ -49,10 +53,12 @@ header {
     }
 }
 
+/* Seção de perdidos */
 .perdidos {
     & .lista {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+        
         & p {
             margin: 10px;
             background-color: lightgray;

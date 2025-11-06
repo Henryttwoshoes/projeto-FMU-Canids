@@ -1,11 +1,13 @@
 @charset "UTF-8";
 
+/* Reseta espaçamentos padrão do navegador */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Cabeçalho do site */
 header {
     background-color: rgb(255, 255, 255);
     padding: 20px;
@@ -13,11 +15,14 @@ header {
     align-items: center;
 }
 
+/* Logo do projeto */
 .logo {
     width: 100px;
     height: auto;
     margin-right: 20px;
 }
+
+/* Menu no canto direito */
 .menu-direita {
     position: absolute;
     top: 20px;
@@ -37,19 +42,21 @@ header {
     color: #333;
     font-weight: bold;
 }
+
+/* Seção principal com mapa e dicas */
 .principal {
     display: grid;
     grid-template-columns: 53% 47%;
     margin: 0 10vw;
 }
 
+/* Mapa interativo */
 .principal .mapa {
     width: 100%;
     max-width: 800px;
     height: 500px;
-    /* substitui o fundo verde por imagem */
     background-image: url('../imagens/mapapronto.png');
-    background-size: cover;       /* cover para preencher, use contain para ver inteira */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10%;
@@ -59,21 +66,24 @@ header {
 .principal .mapa img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* use 'contain' se não quiser cortar */
+    object-fit: cover;
     display: block;
 }
 
+/* Dicas ao lado do mapa */
 .principal .dicas {
     text-align: left;
     padding-top: 4vh;
     margin-left: 100px;
 }
 
+/* Título da seção achados */
 .achados .head1 {
     background-color: rgb(255, 255, 255);
     padding: 10px;
 }
 
+/* Lista de pets achados e perdidos */
 .achados .lista,
 .perdidos .lista {
     display: grid;
@@ -90,6 +100,7 @@ header {
     background-color: lightgray;
 }
 
+/* Card de cada pet */
 .pet-card {
     background: #719cff;
     border-radius: 12px;
@@ -103,6 +114,7 @@ header {
     align-items: center;
 }
 
+/* Foto do pet */
 .pet-card img {
     width: 170px;
     height: 90px;
@@ -111,22 +123,21 @@ header {
     margin-bottom: 8px;
 }
 
+/* Ajusta posição das fotos específicas */
 .perdido1 img {
     object-position: 0 18%;
 }    
 .pet4 img {
     object-position: 0 20%;
 }
-
 .perdido3 img {
     object-position: 0 17%;
 }
-
 .perdido2 img {
     object-position: 0 2%;
 }
 
-
+/* Formulários */
 .forms{
     margin: auto;
     padding: 20px;
@@ -134,6 +145,7 @@ header {
     text-align: center;
 }
 
+/* Seção sobre */
 .about{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -141,22 +153,18 @@ header {
     height: 50vh;
 }
 
-
-
-/* Cursor padrão do site */
+/* Cursor personalizado (patinha) */
 body {
     cursor: url('../imagens/Pata1.png') 18 18, auto;
 }
 
-
-/* Cursor melhorado */
+/* Cursor ao passar em coisas clicáveis */
 .menu-direita a,
 a, button, [role="button"], input, select, textarea, label, .produto, .servico, .clicavel {
     cursor: url('../imagens/Pata2.png') 18 18, pointer;
 }
 
-
-/* Deixando o campo de upload mais unuiforme com o cadastro */
+/* Campos de texto e upload */
 .forms input[type="text"],
 .forms input[type="file"] {
     width: 80%;
@@ -179,11 +187,14 @@ a, button, [role="button"], input, select, textarea, label, .produto, .servico, 
     margin-left: auto;
     margin-right: auto;
 }
+
 .form-group label {
     display: block;
     text-align: center;
     margin-bottom: 5px;
 }
+
+/* Campo de texto grande */
 .forms textarea {
     width: 80%;
     height: 100px;
@@ -196,9 +207,10 @@ a, button, [role="button"], input, select, textarea, label, .produto, .servico, 
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align:center ;
+    text-align:center;
 }
-/* Para o título "BCC Canids!" */
+
+/* Fontes do Google Fonts */
 .bcc-logo {
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 900;
@@ -207,13 +219,11 @@ a, button, [role="button"], input, select, textarea, label, .produto, .servico, 
     font-stretch: expanded;
 }
 
-/* Para o corpo do texto */
 body {
     font-family: 'Oswald', Arial, sans-serif;
     font-weight: 400;
 }
 
-/* Para todos os títulos */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Kanit', Arial, sans-serif;
     font-style: italic;

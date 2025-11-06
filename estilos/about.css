@@ -1,20 +1,23 @@
 @charset "UTF-8";
 
+/* Seção quem somos */
 .quemsomos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
 }
 
+/* Container dos blocos da equipe */
 .blocks {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(10px, 0.2fr));
     padding: 30px;
-    align-items: end;
-    margin-top: 150px;
+    align-items: end; /* alinha no final */
+    margin-top: 150px; /* empurra para baixo */
 }
 
+/* Cada membro da equipe */
 .bloco {
     height: 100px;
     width: 100px;
@@ -26,6 +29,7 @@
     box-sizing: border-box;
 }
 
+/* Foto do membro */
 .bloco img {
     width: 100px;
     height: 100px;
@@ -34,14 +38,16 @@
     margin-bottom: 3px;
 }
 
+/* Nome do membro */
 .bloco p {
     font-size: 10px;
     text-align: center;
-    color: rgb(5, 5, 5);
+    color: #007bff;
     margin: 2;
     font-weight: bold;
 }
 
+/* Seção sobre o projeto */
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -49,6 +55,7 @@
     height: 50vh;
 }
 
+/* Imagem do cachorro */
 .about .esquerda img {
     display: grid;
     width: 120%;
@@ -56,14 +63,12 @@
     object-fit: cover;
 }
 
+/* Título com destaque */
 .titulo-destaque {
     font-size: 1.5rem;
 }
 
+/* Parte azul do título */
 .titulo-destaque span {
     font-size: 3rem;
-}
-
-.bloco p {
-    color: #007bff;
 }
