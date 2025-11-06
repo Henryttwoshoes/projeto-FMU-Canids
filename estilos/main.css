@@ -111,8 +111,19 @@ header {
     margin-bottom: 8px;
 }
 
+.perdido1 img {
+    object-position: 0 18%;
+}    
 .pet4 img {
     object-position: 0 20%;
+}
+
+.perdido3 img {
+    object-position: 0 17%;
+}
+
+.perdido2 img {
+    object-position: 0 2%;
 }
 
 
