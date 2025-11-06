@@ -15,9 +15,9 @@ header {
     align-items: center;
 }
 
-/* Logo pequena */
+/* Logo com tamanho padrão igual ao index */
 .logo {
-    width: 50px;
+    width: 100px;
     height: auto;
     margin-right: 20px;
 }
