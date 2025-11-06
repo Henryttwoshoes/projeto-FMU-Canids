@@ -17,6 +17,11 @@
     margin-top: 150px; /* empurra para baixo */
 }
 
+.direita p {
+    margin-right: 150px;
+    text-align: justify;
+}
+
 /* Cada membro da equipe */
 .bloco {
     height: 100px;

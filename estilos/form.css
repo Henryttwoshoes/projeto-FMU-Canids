@@ -20,7 +20,16 @@ body {
     border-radius: 15px;
     position: relative;
 
-    background-color: rgba(255, 255, 255, 0.429);
+    background-color: rgba(255, 255, 255, 0.795);
+
+    & h1, h2 {
+        text-shadow:
+    -1px -1px 0 rgba(255, 255, 255, 0.711), /* Top-left shadow */
+    1px -1px 0 rgba(255, 255, 255, 0.711),  /* Top-right shadow */
+    -1px 1px 0 rgba(255, 255, 255, 0.711),  /* Bottom-left shadow */
+    1px 1px 0 rgba(255, 255, 255, 0.711);   /* Bottom-right shadow */
+    }
+
 }
 
 .forms h1 {
