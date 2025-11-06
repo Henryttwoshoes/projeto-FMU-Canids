@@ -2,56 +2,155 @@
 
 .head {
     padding: 20px;
+    text-align: center;
 }
 
-.produtos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+/* Estilos gerais para as seções */
+.produtos,
+.servicos {
+    padding: 40px 20px;
+}
+
+.produtos h2,
+.servicos h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Container grid para produtos e serviços */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5\, 250px);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     justify-content: center;
 }
 
+/* Centraliza os últimos itens quando não preenchem a linha completa */
+.produtos .grid-container {
+    grid-template-columns: repeat(5, 250px);
+}
+
+.produtos .grid-container .produto:nth-child(9),
+.produtos .grid-container .produto:nth-child(10),
+.produtos .grid-container .produto:nth-child(11) {
+    grid-column: span 1;
+}
+
+.servicos .grid-container {
+    grid-template-columns: repeat(4, 250px);
+    justify-content: center;
+}
+
+/* Cards de produtos */
 .produto {
-    width: 200px;               /* largura do card */
-    height: 240px;              /* altura fixa do card */
-    background: #92d3f8;           /* quadrado cinza/escuro */
+    background: #92d3f8;
     border-radius: 10px;
-    padding: 12px;
+    padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;        /* centraliza horizontalmente */
-    justify-content: center;    /* centraliza verticalmente */
-    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 280px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .produto img {
-    max-width: 100%;            /* não ultrapassa o card */
-    max-height: 130px;          /* controla altura máxima */
-    object-fit: contain;        /* mantém proporção sem cortar */
-    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .prod-info {
     text-align: center;
     color: #fff;
-    font-size: 0.95rem;
-    line-height: 1.1;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.3;
 }
 
-.servicos{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 0.7fr));
-    max-width: 1000px;      /* Limita a largura máxima */
-    margin: 0 auto;     /* Centraliza e afasta do topo/borda */
-    padding: 40px 30px;    /* Espaçamento interno maior nas laterais */
-    justify-content: center;
-    gap: 76px;
+/* Cards de serviços */
+.servico {
+    background: #b8d4e8;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 280px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-    & .servico{
-        background-color: lightgray;
-        width: 25vw;
-        height: 32vh;
+.servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.servico img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.servico-info {
+    text-align: center;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .produtos .grid-container .produto:nth-child(9) {
+        grid-column: 1 / 2;
+    }
+    
+    .produto,
+    .servico {
+        min-height: 240px;
+    }
+    
+    .produto img,
+    .servico img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .produtos .grid-container .produto:nth-child(9) {
+        grid-column: 1 / 2;
     }
 }

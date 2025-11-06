@@ -11,6 +11,8 @@
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(10px, 0.2fr));
     padding: 30px;
+    align-items: end;
+    margin-top: 150px;
 }
 
 .bloco {
@@ -52,4 +54,16 @@
     width: 120%;
     height: 65%;
     object-fit: cover;
+}
+
+.titulo-destaque {
+    font-size: 1.5rem;
+}
+
+.titulo-destaque span {
+    font-size: 3rem;
+}
+
+.bloco p {
+    color: #007bff;
 }
